@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D17607253DA89E007E7FEA /* Demo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17606253DA89E007E7FEA /* Demo_AppApp.swift */; };
+		33D17609253DA89E007E7FEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17608253DA89E007E7FEA /* ContentView.swift */; };
+		33D1760B253DA8A1007E7FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D1760A253DA8A1007E7FEA /* Assets.xcassets */; };
+		33D1760E253DA8A1007E7FEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D1760D253DA8A1007E7FEA /* Preview Assets.xcassets */; };
+		33D17619253DA8A1007E7FEA /* Demo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17618253DA8A1007E7FEA /* Demo_AppTests.swift */; };
+		33D17624253DA8A1007E7FEA /* Demo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17623253DA8A1007E7FEA /* Demo_AppUITests.swift */; };
+		33D17671253DBD17007E7FEA /* HandWash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17670253DBD17007E7FEA /* HandWash.swift */; };
+		33D1767B253DCBDA007E7FEA /* SoapWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33D1767A253DCBDA007E7FEA /* SoapWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33D17680253DCBDD007E7FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D1767F253DCBDD007E7FEA /* Assets.xcassets */; };
+		33D17687253DCBDD007E7FEA /* SoapWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33D17686253DCBDD007E7FEA /* SoapWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33D1768C253DCBDD007E7FEA /* Demo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1768B253DCBDD007E7FEA /* Demo_AppApp.swift */; };
+		33D1768E253DCBDD007E7FEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1768D253DCBDD007E7FEA /* ContentView.swift */; };
+		33D17690253DCBDD007E7FEA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1768F253DCBDD007E7FEA /* NotificationController.swift */; };
+		33D17692253DCBDD007E7FEA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17691253DCBDD007E7FEA /* NotificationView.swift */; };
+		33D17694253DCBDD007E7FEA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17693253DCBDD007E7FEA /* ComplicationController.swift */; };
+		33D17696253DCBDE007E7FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D17695253DCBDE007E7FEA /* Assets.xcassets */; };
+		33D17699253DCBDE007E7FEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D17698253DCBDE007E7FEA /* Preview Assets.xcassets */; };
+		33D176AD253DCC2A007E7FEA /* HandWash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D17670253DBD17007E7FEA /* HandWash.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33D17615253DA8A1007E7FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D175FB253DA89E007E7FEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D17602253DA89E007E7FEA;
+			remoteInfo = "Demo App";
+		};
+		33D17620253DA8A1007E7FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D175FB253DA89E007E7FEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D17602253DA89E007E7FEA;
+			remoteInfo = "Demo App";
+		};
+		33D1767C253DCBDA007E7FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D175FB253DA89E007E7FEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D17679253DCBDA007E7FEA;
+			remoteInfo = "SoapWatch WatchKit App";
+		};
+		33D17688253DCBDD007E7FEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D175FB253DA89E007E7FEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D17685253DCBDD007E7FEA;
+			remoteInfo = "SoapWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33D1769F253DCBDE007E7FEA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				33D17687253DCBDD007E7FEA /* SoapWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D176A3253DCBDE007E7FEA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				33D1767B253DCBDA007E7FEA /* SoapWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33D17603253DA89E007E7FEA /* Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D17606253DA89E007E7FEA /* Demo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_AppApp.swift; sourceTree = "<group>"; };
+		33D17608253DA89E007E7FEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33D1760A253DA8A1007E7FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D1760D253DA8A1007E7FEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33D1760F253DA8A1007E7FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D17614253DA8A1007E7FEA /* Demo AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D17618253DA8A1007E7FEA /* Demo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_AppTests.swift; sourceTree = "<group>"; };
+		33D1761A253DA8A1007E7FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D1761F253DA8A1007E7FEA /* Demo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D17623253DA8A1007E7FEA /* Demo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_AppUITests.swift; sourceTree = "<group>"; };
+		33D17625253DA8A1007E7FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D17670253DBD17007E7FEA /* HandWash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandWash.swift; sourceTree = "<group>"; };
+		33D17677253DCBDA007E7FEA /* SoapWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoapWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D1767A253DCBDA007E7FEA /* SoapWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoapWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D1767F253DCBDD007E7FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D17681253DCBDD007E7FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D17686253DCBDD007E7FEA /* SoapWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SoapWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D1768B253DCBDD007E7FEA /* Demo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_AppApp.swift; sourceTree = "<group>"; };
+		33D1768D253DCBDD007E7FEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33D1768F253DCBDD007E7FEA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		33D17691253DCBDD007E7FEA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		33D17693253DCBDD007E7FEA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		33D17695253DCBDE007E7FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D17698253DCBDE007E7FEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33D1769A253DCBDE007E7FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D1769B253DCBDE007E7FEA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33D17600253DA89E007E7FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17611253DA8A1007E7FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D1761C253DA8A1007E7FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17683253DCBDD007E7FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33D175FA253DA89E007E7FEA = {
+			isa = PBXGroup;
+			children = (
+				33D17605253DA89E007E7FEA /* Demo App */,
+				33D17617253DA8A1007E7FEA /* Demo AppTests */,
+				33D17622253DA8A1007E7FEA /* Demo AppUITests */,
+				33D1767E253DCBDA007E7FEA /* SoapWatch WatchKit App */,
+				33D1768A253DCBDD007E7FEA /* SoapWatch WatchKit Extension */,
+				33D17604253DA89E007E7FEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33D17604253DA89E007E7FEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33D17603253DA89E007E7FEA /* Demo App.app */,
+				33D17614253DA8A1007E7FEA /* Demo AppTests.xctest */,
+				33D1761F253DA8A1007E7FEA /* Demo AppUITests.xctest */,
+				33D17677253DCBDA007E7FEA /* SoapWatch.app */,
+				33D1767A253DCBDA007E7FEA /* SoapWatch WatchKit App.app */,
+				33D17686253DCBDD007E7FEA /* SoapWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33D17605253DA89E007E7FEA /* Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				33D17606253DA89E007E7FEA /* Demo_AppApp.swift */,
+				33D17608253DA89E007E7FEA /* ContentView.swift */,
+				33D17670253DBD17007E7FEA /* HandWash.swift */,
+				33D1760A253DA8A1007E7FEA /* Assets.xcassets */,
+				33D1760F253DA8A1007E7FEA /* Info.plist */,
+				33D1760C253DA8A1007E7FEA /* Preview Content */,
+			);
+			path = "Demo App";
+			sourceTree = "<group>";
+		};
+		33D1760C253DA8A1007E7FEA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				33D1760D253DA8A1007E7FEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		33D17617253DA8A1007E7FEA /* Demo AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				33D17618253DA8A1007E7FEA /* Demo_AppTests.swift */,
+				33D1761A253DA8A1007E7FEA /* Info.plist */,
+			);
+			path = "Demo AppTests";
+			sourceTree = "<group>";
+		};
+		33D17622253DA8A1007E7FEA /* Demo AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33D17623253DA8A1007E7FEA /* Demo_AppUITests.swift */,
+				33D17625253DA8A1007E7FEA /* Info.plist */,
+			);
+			path = "Demo AppUITests";
+			sourceTree = "<group>";
+		};
+		33D1767E253DCBDA007E7FEA /* SoapWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				33D1767F253DCBDD007E7FEA /* Assets.xcassets */,
+				33D17681253DCBDD007E7FEA /* Info.plist */,
+			);
+			path = "SoapWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		33D1768A253DCBDD007E7FEA /* SoapWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33D1768B253DCBDD007E7FEA /* Demo_AppApp.swift */,
+				33D1768D253DCBDD007E7FEA /* ContentView.swift */,
+				33D1768F253DCBDD007E7FEA /* NotificationController.swift */,
+				33D17691253DCBDD007E7FEA /* NotificationView.swift */,
+				33D17693253DCBDD007E7FEA /* ComplicationController.swift */,
+				33D17695253DCBDE007E7FEA /* Assets.xcassets */,
+				33D1769A253DCBDE007E7FEA /* Info.plist */,
+				33D1769B253DCBDE007E7FEA /* PushNotificationPayload.apns */,
+				33D17697253DCBDE007E7FEA /* Preview Content */,
+			);
+			path = "SoapWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		33D17697253DCBDE007E7FEA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				33D17698253DCBDE007E7FEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33D17602253DA89E007E7FEA /* Demo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D17628253DA8A1007E7FEA /* Build configuration list for PBXNativeTarget "Demo App" */;
+			buildPhases = (
+				33D175FF253DA89E007E7FEA /* Sources */,
+				33D17600253DA89E007E7FEA /* Frameworks */,
+				33D17601253DA89E007E7FEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo App";
+			productName = "Demo App";
+			productReference = 33D17603253DA89E007E7FEA /* Demo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33D17613253DA8A1007E7FEA /* Demo AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D1762B253DA8A1007E7FEA /* Build configuration list for PBXNativeTarget "Demo AppTests" */;
+			buildPhases = (
+				33D17610253DA8A1007E7FEA /* Sources */,
+				33D17611253DA8A1007E7FEA /* Frameworks */,
+				33D17612253DA8A1007E7FEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D17616253DA8A1007E7FEA /* PBXTargetDependency */,
+			);
+			name = "Demo AppTests";
+			productName = "Demo AppTests";
+			productReference = 33D17614253DA8A1007E7FEA /* Demo AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33D1761E253DA8A1007E7FEA /* Demo AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D1762E253DA8A1007E7FEA /* Build configuration list for PBXNativeTarget "Demo AppUITests" */;
+			buildPhases = (
+				33D1761B253DA8A1007E7FEA /* Sources */,
+				33D1761C253DA8A1007E7FEA /* Frameworks */,
+				33D1761D253DA8A1007E7FEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D17621253DA8A1007E7FEA /* PBXTargetDependency */,
+			);
+			name = "Demo AppUITests";
+			productName = "Demo AppUITests";
+			productReference = 33D1761F253DA8A1007E7FEA /* Demo AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		33D17676253DCBDA007E7FEA /* SoapWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D176A4253DCBDE007E7FEA /* Build configuration list for PBXNativeTarget "SoapWatch" */;
+			buildPhases = (
+				33D17675253DCBDA007E7FEA /* Resources */,
+				33D176A3253DCBDE007E7FEA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D1767D253DCBDA007E7FEA /* PBXTargetDependency */,
+			);
+			name = SoapWatch;
+			productName = SoapWatch;
+			productReference = 33D17677253DCBDA007E7FEA /* SoapWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		33D17679253DCBDA007E7FEA /* SoapWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D176A0253DCBDE007E7FEA /* Build configuration list for PBXNativeTarget "SoapWatch WatchKit App" */;
+			buildPhases = (
+				33D17678253DCBDA007E7FEA /* Resources */,
+				33D1769F253DCBDE007E7FEA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33D17689253DCBDD007E7FEA /* PBXTargetDependency */,
+			);
+			name = "SoapWatch WatchKit App";
+			productName = "SoapWatch WatchKit App";
+			productReference = 33D1767A253DCBDA007E7FEA /* SoapWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		33D17685253DCBDD007E7FEA /* SoapWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D1769C253DCBDE007E7FEA /* Build configuration list for PBXNativeTarget "SoapWatch WatchKit Extension" */;
+			buildPhases = (
+				33D17682253DCBDD007E7FEA /* Sources */,
+				33D17683253DCBDD007E7FEA /* Frameworks */,
+				33D17684253DCBDD007E7FEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoapWatch WatchKit Extension";
+			productName = "SoapWatch WatchKit Extension";
+			productReference = 33D17686253DCBDD007E7FEA /* SoapWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33D175FB253DA89E007E7FEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					33D17602253DA89E007E7FEA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					33D17613253DA8A1007E7FEA = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 33D17602253DA89E007E7FEA;
+					};
+					33D1761E253DA8A1007E7FEA = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 33D17602253DA89E007E7FEA;
+					};
+					33D17676253DCBDA007E7FEA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					33D17679253DCBDA007E7FEA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					33D17685253DCBDD007E7FEA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 33D175FE253DA89E007E7FEA /* Build configuration list for PBXProject "Demo App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33D175FA253DA89E007E7FEA;
+			productRefGroup = 33D17604253DA89E007E7FEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33D17602253DA89E007E7FEA /* Demo App */,
+				33D17613253DA8A1007E7FEA /* Demo AppTests */,
+				33D1761E253DA8A1007E7FEA /* Demo AppUITests */,
+				33D17676253DCBDA007E7FEA /* SoapWatch */,
+				33D17679253DCBDA007E7FEA /* SoapWatch WatchKit App */,
+				33D17685253DCBDD007E7FEA /* SoapWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33D17601253DA89E007E7FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D1760E253DA8A1007E7FEA /* Preview Assets.xcassets in Resources */,
+				33D1760B253DA8A1007E7FEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17612253DA8A1007E7FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D1761D253DA8A1007E7FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17675253DCBDA007E7FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17678253DCBDA007E7FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D17680253DCBDD007E7FEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17684253DCBDD007E7FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D17699253DCBDE007E7FEA /* Preview Assets.xcassets in Resources */,
+				33D17696253DCBDE007E7FEA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33D175FF253DA89E007E7FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D17609253DA89E007E7FEA /* ContentView.swift in Sources */,
+				33D17671253DBD17007E7FEA /* HandWash.swift in Sources */,
+				33D17607253DA89E007E7FEA /* Demo_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17610253DA8A1007E7FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D17619253DA8A1007E7FEA /* Demo_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D1761B253DA8A1007E7FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D17624253DA8A1007E7FEA /* Demo_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D17682253DCBDD007E7FEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D17690253DCBDD007E7FEA /* NotificationController.swift in Sources */,
+				33D176AD253DCC2A007E7FEA /* HandWash.swift in Sources */,
+				33D1768E253DCBDD007E7FEA /* ContentView.swift in Sources */,
+				33D17694253DCBDD007E7FEA /* ComplicationController.swift in Sources */,
+				33D1768C253DCBDD007E7FEA /* Demo_AppApp.swift in Sources */,
+				33D17692253DCBDD007E7FEA /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33D17616253DA8A1007E7FEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D17602253DA89E007E7FEA /* Demo App */;
+			targetProxy = 33D17615253DA8A1007E7FEA /* PBXContainerItemProxy */;
+		};
+		33D17621253DA8A1007E7FEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D17602253DA89E007E7FEA /* Demo App */;
+			targetProxy = 33D17620253DA8A1007E7FEA /* PBXContainerItemProxy */;
+		};
+		33D1767D253DCBDA007E7FEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D17679253DCBDA007E7FEA /* SoapWatch WatchKit App */;
+			targetProxy = 33D1767C253DCBDA007E7FEA /* PBXContainerItemProxy */;
+		};
+		33D17689253DCBDD007E7FEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D17685253DCBDD007E7FEA /* SoapWatch WatchKit Extension */;
+			targetProxy = 33D17688253DCBDD007E7FEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33D17626253DA8A1007E7FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33D17627253DA8A1007E7FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33D17629253DA8A1007E7FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo App/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Demo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.esgi.Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33D1762A253DA8A1007E7FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo App/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Demo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.esgi.Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33D1762C253DA8A1007E7FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = "Demo AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.esgi.Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo App.app/Demo App";
+			};
+			name = Debug;
+		};
+		33D1762D253DA8A1007E7FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = "Demo AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.esgi.Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo App.app/Demo App";
+			};
+			name = Release;
+		};
+		33D1762F253DA8A1007E7FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = "Demo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.esgi.Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Demo App";
+			};
+			name = Debug;
+		};
+		33D17630253DA8A1007E7FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = "Demo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.esgi.Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Demo App";
+			};
+			name = Release;
+		};
+		33D1769D253DCBDE007E7FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SoapWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SoapWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.5AL.SoapWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		33D1769E253DCBDE007E7FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SoapWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SoapWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.5AL.SoapWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		33D176A1253DCBDE007E7FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				IBSC_MODULE = SoapWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "SoapWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.5AL.SoapWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		33D176A2253DCBDE007E7FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				IBSC_MODULE = SoapWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "SoapWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.5AL.SoapWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		33D176A5253DCBDE007E7FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.5AL.SoapWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		33D176A6253DCBDE007E7FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.esgi.5AL.SoapWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33D175FE253DA89E007E7FEA /* Build configuration list for PBXProject "Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D17626253DA8A1007E7FEA /* Debug */,
+				33D17627253DA8A1007E7FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D17628253DA8A1007E7FEA /* Build configuration list for PBXNativeTarget "Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D17629253DA8A1007E7FEA /* Debug */,
+				33D1762A253DA8A1007E7FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D1762B253DA8A1007E7FEA /* Build configuration list for PBXNativeTarget "Demo AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D1762C253DA8A1007E7FEA /* Debug */,
+				33D1762D253DA8A1007E7FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D1762E253DA8A1007E7FEA /* Build configuration list for PBXNativeTarget "Demo AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D1762F253DA8A1007E7FEA /* Debug */,
+				33D17630253DA8A1007E7FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D1769C253DCBDE007E7FEA /* Build configuration list for PBXNativeTarget "SoapWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D1769D253DCBDE007E7FEA /* Debug */,
+				33D1769E253DCBDE007E7FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D176A0253DCBDE007E7FEA /* Build configuration list for PBXNativeTarget "SoapWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D176A1253DCBDE007E7FEA /* Debug */,
+				33D176A2253DCBDE007E7FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D176A4253DCBDE007E7FEA /* Build configuration list for PBXNativeTarget "SoapWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D176A5253DCBDE007E7FEA /* Debug */,
+				33D176A6253DCBDE007E7FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33D175FB253DA89E007E7FEA /* Project object */;
+}
