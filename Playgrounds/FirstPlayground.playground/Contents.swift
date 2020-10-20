@@ -96,5 +96,45 @@ func display(teamName: String, score: Int = 0) -> Int {
     return Int(4.8)
 }
 
+struct Temperature {
+    var celsius: Double
+//    var kelvin: Double {
+//        celsius + 273.15
+//    }
+
+    var kelvin: Double  {
+        get {
+            celsius + 273.15
+        }
+
+        set {
+            celsius = newValue - 273.15
+        }
+    }
+
+    init(celsius: Double) {
+        self.celsius = celsius
+    }
+
+    init(fahrenheit: Double) {
+        celsius = (fahrenheit - 32) / 1.8
+    }
+
+    init(kelvin: Double) {
+        celsius = kelvin - 273.15
+    }
+
+}
+
+var temperature = Temperature(kelvin: 0)
+
+print(temperature.celsius)
+print(temperature.kelvin)
+
+temperature.kelvin = 0
+
+
+
+
 
 
