@@ -133,8 +133,32 @@ print(temperature.kelvin)
 
 temperature.kelvin = 0
 
+class Vehicle {
+    var currentSpeed: Double = 0.0
 
+   var description: String {
+     "traveling at \(currentSpeed) miles per hour"
+   }
 
+   func makeNoise() {
+      // do nothing - an arbitrary vehicle doesn't necessarily make a noise
+   }
+}
 
+let aVehicle = Vehicle()
+print(aVehicle.description)
 
+struct Book {
+    var title: String
+    var pubYear: Int?
+}
 
+let aBook = Book(title: "SwiftUI for dummies", pubYear: 2020)
+
+let pubYear: Int? = aBook.pubYear
+
+if pubYear != nil {
+    print(pubYear!)
+} else {
+    print("Livre non publié")
+}
