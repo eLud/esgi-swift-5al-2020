@@ -155,10 +155,20 @@ struct Book {
 
 let aBook = Book(title: "SwiftUI for dummies", pubYear: 2020)
 
-let pubYear: Int? = aBook.pubYear
+let pubYear: Optional<Int> = aBook.pubYear
 
 if pubYear != nil {
     print(pubYear!)
 } else {
     print("Livre non publié")
 }
+
+//Optional Binding
+if let publicationYear = aBook.pubYear {
+    print(publicationYear)
+} else {
+    print("Livre non publié")
+}
+
+//nil coalescing operator
+let value = Int("tkk,nf") ?? 0
