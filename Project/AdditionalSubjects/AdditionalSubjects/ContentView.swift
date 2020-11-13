@@ -10,11 +10,17 @@ import SwiftUI
 struct ContentView: View {
 
     @State private var image: Image?
+    let networkRequester = NetworkRequester()
 
     var body: some View {
         VStack {
             Button("Get image") {
-                requestImage()
+                networkRequester.requestImage { (possibleImage) in
+                    if let downloadedImage = possibleImage {
+                        image = Image(uiImage: downloadedImage)
+                    }
+                }
+                requestAlbum()
             }
             if let anImage = image {
                 anImage
@@ -24,45 +30,44 @@ struct ContentView: View {
         }
     }
 
-    func requestImage() {
+    func requestAlbum() {
 
-        // Create URL
-        guard let urlImage = URL(string: "https://www.apple.com/v/mac/m1/a/images/overview/m1_hero__gayysked51ym_large_2x.jpg") else {
-            fatalError("Wrong URL format")
+        guard let data = encodeAlbum() else { return }
+
+        let decoder = JSONDecoder()
+
+        if let album = try? decoder.decode(Album.self, from: data) {
+            print(album)
         }
+    }
 
-        //To customize request (if needed)
-        var request = URLRequest(url: urlImage)
-        request.httpMethod = "POST"
+    func encodeAlbum() -> Data? {
 
-        // Get session
-        let session = URLSession.shared
+        let track1 = Track(title: "T1", duration: 3.5)
+        let track2 = Track(title: "T2", duration: 3.5)
+        let album = Album(tracks: [track1, track2])
 
-        // Create task
-        let task = session.dataTask(with: urlImage) { (data, response, error) in
-            guard error == nil else { return }
-            guard let data = data, let img = UIImage(data: data) else { return }
+        let jsonEncoder = JSONEncoder()
+        let data = try? jsonEncoder.encode(album)
 
-            DispatchQueue.main.async {
-                image = Image(uiImage: img)
-            }
+        print(String(data: data!, encoding: .utf8)!)
 
-            DispatchQueue.global(qos: .utility).async {
-                //Something in  background
-                DispatchQueue.main.async {
-                    //Go back in the main thread
-                }
-            }
-        }
-
-        // Resume task
-        task.resume()
-
+        return data
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+struct Album: Codable {
+    var tracks: [Track]
+}
+
+struct Track: Codable {
+    var title: String
+    var duration: Double
 }
