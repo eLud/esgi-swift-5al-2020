@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
 
     @State private var textToDisplay: String = "Hello, SwiftUI!"
-    @StateObject private var data = AppData(username: "Ludovic", age: 34)
+    @EnvironmentObject private var data: AppData
 
     var body: some View {
         VStack {
@@ -23,7 +23,7 @@ struct ContentView: View {
             Text(data.username)
                 .padding()
             TextField("Username", text: $textToDisplay)
-            BadgeView(appData: data)
+            BadgeView()
             ProfileView(username: $textToDisplay)
         }
     }
@@ -49,7 +49,7 @@ struct ProfileView: View {
 
 struct BadgeView: View {
 
-    @ObservedObject var appData: AppData
+    @EnvironmentObject private var appData: AppData
 
     var body: some View {
         ZStack {
@@ -64,6 +64,7 @@ struct BadgeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AppData(username: "Toto", age: 30))
     }
 }
 
